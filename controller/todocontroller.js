@@ -3,7 +3,7 @@ var urlencodedparser = bodyparser.urlencoded({extended:false});
 
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://root:root@ds229380.mlab.com:29380/tododb');
+mongoose.connect('mongodb://localhost/tododb');
 
 var todoSchema = new mongoose.Schema({
     item : String
